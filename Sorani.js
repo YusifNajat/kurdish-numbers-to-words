@@ -87,7 +87,7 @@ export default class KurdishSoraniNumbersToWords {
             return 'سەد'
         }else if (n.endsWith('00')){
             const first_n = n.substr(0, 1)
-            return this._calculate_ones(first_n) + 'سەد'
+            return this._calculate_ones(first_n) ) + ' ' 'سەد'
         }else{
             const first_n = n.substr(0, 1)
             const second_n = parseInt(n.substr(1)).toString()
